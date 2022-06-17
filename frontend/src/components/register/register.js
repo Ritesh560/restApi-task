@@ -26,7 +26,7 @@ const Register = () => {
   const register = async () => {
     const { name, email, password, reEnterPassword } = user
     if (name && email && password && password === reEnterPassword) {
-      const response = await axios.post("http://localhost:8080/register", user)
+      const response = await axios.post("https://login-signup-nodejs.herokuapp.com/register", user)
       if (response.data.errors) alert(response.data.errors[0].msg)
       else {
         alert("success, now you can login.")

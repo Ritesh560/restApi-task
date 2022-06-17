@@ -22,7 +22,7 @@ const Login = ({ setUserLogin }) => {
   }
 
   const login = async () => {
-    const response = await axios.post("http://localhost:8080/login", user)
+    const response = await axios.post("https://login-signup-nodejs.herokuapp.com/login", user)
     if (response.data.errors) alert(response.data.errors[0].msg)
     if (!response.data.errors) {
       setUserLogin({ _id: response.data._id })
