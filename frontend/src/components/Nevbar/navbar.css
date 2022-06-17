@@ -1,0 +1,13 @@
+.Navbar {
+  height: 40px;
+  background-color: blue;
+  border: 2px solid blue;
+  padding-top: 10px;
+}
+.Links {
+  color: white;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
