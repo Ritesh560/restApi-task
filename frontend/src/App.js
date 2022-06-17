@@ -9,7 +9,6 @@ function App() {
   const [user, setUserLogin] = useState({})
 
   function Home() {
-    return <Homepage />
     return user._id ? <Homepage /> : <Login setUserLogin={setUserLogin} />
   }
 
